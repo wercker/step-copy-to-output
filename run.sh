@@ -1,5 +1,4 @@
-
-type rsync || { sudo apt-get update ; sudo apt-get install rsync }
+type rsync || { sudo apt-get update ; sudo apt-get install rsync; }
 
 export exclude_parameters=""
 
@@ -9,4 +8,4 @@ do
 done
 
 echo "rsync -rv $exclude_parameters $WERCKER_ROOT/ $rsync"
-rsync -rv $exclude_parameters $WERCKER_ROOT/ $WERCKER_OUTPUT_DIR
+rsync -rv $exclude_parameters "$WERCKER_ROOT/" "$WERCKER_OUTPUT_DIR"
