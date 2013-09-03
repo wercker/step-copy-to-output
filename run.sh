@@ -1,4 +1,5 @@
-sudo apt-get install rsync
+
+type rsync || { sudo apt-get update ; sudo apt-get install rsync }
 
 export exclude_parameters=""
 
