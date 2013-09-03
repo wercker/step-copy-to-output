@@ -1,4 +1,4 @@
-# copy-to-output step
+# copy-to-output
 
 Used to filter specific files and directories that aren't needed in the deploy phase.
 
