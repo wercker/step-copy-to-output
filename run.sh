@@ -2,7 +2,7 @@ sudo apt-get install rsync
 
 export exclude_parameters=""
 
-for x in $WERCKER_COPY_OUTPUT_EXCLUDE
+for x in $WERCKER_COPY_TO_OUTPUT_EXCLUDE
 do
     export exclude_parameters="$exclude_parameters --exclude=$x "
 done
