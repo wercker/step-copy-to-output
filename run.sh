@@ -7,5 +7,5 @@ do
     export exclude_parameters="$exclude_parameters --exclude=$x "
 done
 
-echo "rsync -rv $exclude_parameters $WERCKER_ROOT/ $rsync"
+echo "rsync -rv $exclude_parameters $PWD/ $rsync"
 rsync -rv $exclude_parameters "$WERCKER_ROOT/" "$WERCKER_OUTPUT_DIR"
